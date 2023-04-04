@@ -1,0 +1,1 @@
+npm start "$@" -C /Users/guilhermekodama/Projects/release-manager-cli
