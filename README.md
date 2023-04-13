@@ -12,7 +12,7 @@ Release Manager CLI helps you run repetitive tasks for our Release Process. Beca
 - [] Send release notes on #general
 
 
-# How it works
+# Install
 
 Setup CLI running this:
 ```
@@ -26,3 +26,15 @@ export PATH="/usr/local/bin:$PATH"
 ```
 
 ## Cut Github Release
+
+Release
+```
+mycli cut minor
+```
+
+Hotfix
+```
+mycli cut patch --hotfix
+```
+
+

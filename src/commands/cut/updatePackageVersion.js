@@ -1,5 +1,16 @@
-// Update the version number in package.json and create a commit
-// const packageJson = require('./package.json');
-// packageJson.version = nextVersion;
-// await git.add('package.json');
-// await git.commit(`Bump version to ${nextVersion}`);
+import fs from 'fs';
+import { BASE_PATH } from '../../env';
+
+const updatePackageVersion = async (nextVersion, git) => {
+  const PACKAGE_PATH = `${BASE_PATH}/package.json`;
+
+  const packageJson = require(PACKAGE_PATH);
+  packageJson.version = nextVersion;
+
+  fs.writeFileSync(PACKAGE_PATH, JSON.stringify(packageJson, null, 2));
+
+  await git.add('package.json');
+  await git.commit(`feat: bump version to ${nextVersion}`);
+};
+
+export default updatePackageVersion;

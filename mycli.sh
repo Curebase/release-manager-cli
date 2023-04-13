@@ -1,1 +1,1 @@
-npm start "$@" -C /Users/guilhermekodama/Projects/release-manager-cli
+yarn -C /Users/guilhermekodama/Projects/release-manager-cli start "$@"
