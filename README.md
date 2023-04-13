@@ -25,6 +25,10 @@ Note: Make sure that `/usr/local/bin` is included in your system's PATH environm
 export PATH="/usr/local/bin:$PATH"
 ```
 
+ENV
+
+Don't forget to change your path to web-app project on `/src/env.js`. We will improve this in the future.
+
 ## Cut Github Release
 
 Release
